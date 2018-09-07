@@ -69,7 +69,8 @@ html, body {
 }
 body {
 	background: #14181E;
-	font-family: "merriweather-regular", serif;
+	/* font-family: "merriweather-regular", serif; */
+	font-family: "Merriweather script=cyrillic rev=2", sans-serif;
 	font-size: 1.6rem;
 	line-height: 3rem;
 	color: #737373;
@@ -108,7 +109,7 @@ h3, .h03, h4, .h04 {
 	margin-bottom: 1.8rem;
 }
 h5, .h05, h6, .h06 {
-	font-family: "raleway-heavy";
+	font-family: "raleway-heavy", sans-serif;
 	margin-bottom: 1.2rem;
 }
 
@@ -157,6 +158,9 @@ p.lead {
 	font-size: 1.8rem;
 	line-height: 1.8;
 	color: #737373;
+}
+.align-left {
+	text-align: left;
 }
 @media only screen and (max-width:768px) {
 	p.lead {
@@ -839,7 +843,7 @@ header .logo a {
 	color: transparent;
 	width: 42px;
 	height: 42px;
-	background: url("../images/logo.png") no-repeat center;
+	background: url("../images/itcom74_icon.png") no-repeat center;
 	background-size: 42px 42px;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
@@ -975,6 +979,7 @@ a.menu-toggle {
 	-webkit-transition: color 0.3s ease-in-out;
 	-ms-transition: color 0.3s ease-in-out;
 	transition: color 0.3s ease-in-out;
+	font-weight: bold;
 }
 .main-navigation li a:active {
 	background-color: transparent !important;
@@ -1148,7 +1153,8 @@ a.menu-toggle {
  */
 
 #intro {
-	background: #14181E url(../images/intro-bg.jpg) no-repeat center;
+	background: #14181E url(../images/itcom74_intro-bg.jpg) no-repeat center;
+	/* background: #14181E url(../images/intro-bg.jpg) no-repeat center; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1179,8 +1185,10 @@ a.menu-toggle {
 }
 .intro-content h1 {
 	color: #FFFFFF;
-	font-family: "merriweather-bold", serif;
-	font-size: 5.4rem;
+	/* font-family: "merriweather-bold", serif;
+	font-size: 5.4rem; */
+	font-family: "Merriweather script=cyrillic rev=2", serif;
+    font-size: 6.4rem;
 	line-height: 1.334;
 	max-width: 800px;
 	margin-left: auto;
@@ -1408,6 +1416,7 @@ a.menu-toggle {
  * ------------------------------------------------------------------- 
  */
 
+#about,
 #process {
 	background: #FFFFFF;
 	padding-top: 12rem;
@@ -1439,7 +1448,8 @@ a.menu-toggle {
 .process-content .image-part {
 	margin: 0 auto;
 	height: 660px;
-	background-image: url("../images/appdesign.jpg");
+	/* background-image: url("../images/appdesign.jpg"); */
+	background-image: url("../images/itcom74_appdesign.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: contain;
@@ -1486,6 +1496,7 @@ a.menu-toggle {
 	}
 }
 @media only screen and (max-width:768px) {
+	#about,
 	#process {
 		padding-bottom: 27rem;
 	}
@@ -1508,6 +1519,7 @@ a.menu-toggle {
 	}
 }
 @media only screen and (max-width:400px) {
+	#about,
 	#process {
 		padding-bottom: 21rem;
 	}
@@ -1525,9 +1537,10 @@ a.menu-toggle {
  *
  * ------------------------------------------------------------------- 
  */
-
+#itcom74-services,
 #features {
-	background: #090909 url(../images/features-bg.jpg) no-repeat center;
+	background: #090909 url(../images/itcom74-features-bg.jpg) no-repeat center;
+	/* background: #090909 url(../images/features-bg.jpg) no-repeat center; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1535,12 +1548,15 @@ a.menu-toggle {
 	padding-bottom: 12rem;
 	color: white;
 }
+#itcom74-services .section-intro h1,
 #features .section-intro h1 {
 	color: white;
 }
+#itcom74-services .section-intro h5,
 #features .section-intro h5 {
 	color: rgba(255, 255, 255, 0.5);
 }
+#itcom74-services .section-intro p,
 #features .section-intro p {
 	color: rgba(255, 255, 255, 0.7);
 }
@@ -1609,7 +1625,7 @@ a.menu-toggle {
 }
 .pricing-content {
 	margin-top: 6.6rem;
-	max-width: 1280px;
+	max-width: 800px;
 }
 .pricing-content .bgrid {
 	margin-bottom: 3.6rem;
@@ -1769,6 +1785,7 @@ a.menu-toggle {
  * ------------------------------------------------------------------- 
  */
 
+#contacts,
 #testimonials {
 	background: #FFFFFF;
 	padding-top: 10.2rem;
@@ -1779,12 +1796,14 @@ a.menu-toggle {
 	overflow: hidden;
 	text-align: center;
 }
+#contacts .h01,
 #testimonials .h01 {
 	padding-bottom: 2.1rem;
 	margin-bottom: 3.6rem;
 	position: relative;
 	color: #252525;
 }
+#contacts .h01::after,
 #testimonials .h01::after {
 	display: block;
 	background-color: #05bca9;
@@ -1796,6 +1815,7 @@ a.menu-toggle {
 	bottom: 0;
 	margin-left: -60px;
 }
+#contacts .flex-container,
 #testimonials .flex-container {
 	width: 80%;
 	max-width: 800px;
@@ -2204,7 +2224,7 @@ footer ul li {
 .footer-main .footer-logo {
 	width: 162px;
 	height: 39px;
-	background: url("../images/footer-logo.png") no-repeat center;
+	background: url("../images/itcom74_logo.png") no-repeat center;
 	background-size: 162px 39px;
 	margin: -.6rem 0 2.1rem -.3rem;
 	display: block;
@@ -2367,6 +2387,15 @@ footer ul li {
 #go-top a:hover {
 	background: #ff7b29;
 	color: #FFFFFF;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 1980px;
+}
+
+.block-1-2 .bgrid {
+	max-width: 400px;
 }
 
 /*# sourceMappingURL=main.css.map */
