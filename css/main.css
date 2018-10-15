@@ -2399,3 +2399,23 @@ footer ul li {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.u-separator {
+	width: 100%;
+	display: inline-block;
+}
+
+.u-separator:after {
+	display: block;
+    background-color: #05bca9;
+    height: 3px;
+    content: '\0020';
+	position: relative;
+	width: 100px;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.ta-center {
+	text-align: center;
+}
